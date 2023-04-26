@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="SassoCartaForbice.css" />
+    <title>Sasso Carta Forbici</title>
+    <link rel="icon" href="icon.png">
+  </head>
+  <body>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Giocatore</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>Sasso Carta Forbice</h1>
+        <button>Gioca!</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Scegli:</h2>
+        <div class="hands">
+          <img class="player-hand" src="sasso.png" alt="" />
+          <img class="computer-hand" src="sasso.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="sasso">sasso</button>
+          <button class="carta">carta</button>
+          <button class="forbice">forbice</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="SassoCartaForbice.js"></script>
+  </body>
+</html>
