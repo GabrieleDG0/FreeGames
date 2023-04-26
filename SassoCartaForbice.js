@@ -2,7 +2,7 @@ const game = () => {
     let pScore = 0;
     let cScore = 0;
   
-    //Start the Game
+    //Variabili e inizializzazione
     const startGame = () => {
       const playBtn = document.querySelector(".intro button");
       const introScreen = document.querySelector(".intro");
@@ -13,7 +13,7 @@ const game = () => {
         match.classList.add("fadeIn");
       });
     };
-    //Play Match
+    //Inizio
     const playMatch = () => {
       const options = document.querySelectorAll(".options button");
       const playerHand = document.querySelector(".player-hand");
@@ -25,23 +25,23 @@ const game = () => {
           this.style.animation = "";
         });
       });
-      //Computer Options
+      //Opzioni computer
       const computerOptions = ["sasso", "carta", "forbice"];
   
       options.forEach(option => {
         option.addEventListener("click", function() {
-          //Computer Choice
+          //Scelta del computer
           const computerNumber = Math.floor(Math.random() * 3);
           const computerChoice = computerOptions[computerNumber];
   
           setTimeout(() => {
-            //Here is where we call compare hands
+            //Confronto scelte
             compareHands(this.textContent, computerChoice);
-            //Update Images
+            //Immagini
             playerHand.src = `${this.textContent}.png`;
             computerHand.src = `${computerChoice}.png`;
           }, 2000);
-          //Animation
+          //Animazioni varie
           playerHand.style.animation = "shakePlayer 2s ease";
           computerHand.style.animation = "shakeComputer 2s ease";
         });
@@ -56,14 +56,14 @@ const game = () => {
     };
   
     const compareHands = (playerChoice, computerChoice) => {
-      //Update Text
+      //Testo
       const winner = document.querySelector(".winner");
-      //Checking for a tie
+      //Pareggio
       if (playerChoice === computerChoice) {
         winner.textContent = "Pareggio!";
         return;
       }
-      //Check for Rock
+      //SASSO
       if (playerChoice === "sasso") {
         if (computerChoice === "forbice") {
           winner.textContent = "Giocatore vince!";
@@ -77,7 +77,7 @@ const game = () => {
           return;
         }
       }
-      //Check for Paper
+      //CARTA
       if (playerChoice === "carta") {
         if (computerChoice === "forbice") {
           winner.textContent = "Computer vince!";
@@ -91,7 +91,7 @@ const game = () => {
           return;
         }
       }
-      //Check for Scissors
+      //FORBICE
       if (playerChoice === "forbice") {
         if (computerChoice === "sasso") {
           winner.textContent = "Computer vince!";
@@ -107,10 +107,7 @@ const game = () => {
       }
     };
   
-    //Is call all the inner function
     startGame();
     playMatch();
   };
-  
-  //start the game function
   game();
