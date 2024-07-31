@@ -1,0 +1,31 @@
+body {
+    background: url(../Images/Wallpaper.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+    width: 450px;
+    background: rgba(194, 194, 194, 0.7);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 10px;
+}
+.box-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box p {
+    text-align: justify;
+}

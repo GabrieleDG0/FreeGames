@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FreeGames</title>
+        <meta name="viewport" content="width=device-width, initial scale=1.0"
+        <title></title>
+        <link href="Homepage/styles.css" rel="stylesheet">
+        <link rel="icon" href="Images/Icon.png">
+    </head>
+    <body>
+        <div class="scritta">
+            FREE GAMES
+          </div>
+          
+            <div class="container">
+                <img src="Images/Menu.png" class="menu-icon" onclick="openmenu()">
+                <div class="menu-box" id="menu">
+                    <div class="right-links">
+                        <a href="Games/Games.html">LET'S PLAY</a>
+                        <img src="Images/Close.png" onclick="closemenu()">
+                    </div>
+                    <div class="menu-links">
+                        <a href="#" onclick="closemenu()">Home</a>
+                        <a href="AboutMe/AboutMe.html">About Me</a>
+                        <a href="Contacts/Contacts.html">Contacts</a>
+                    </div>
+                </div>
+            </div>
+<script>
+    var menu = document.getElementById("menu");
+    function closemenu() {
+        menu.style.top = "-100vh"
+    }
+    function openmenu() {
+        menu.style.top = "17%"
+    }
+</script>
+    </body>
+</html>
