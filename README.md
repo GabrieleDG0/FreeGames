@@ -1,5 +1,8 @@
 # FreeGames 🎮
 
+*Github Pages*
+Link if you want to visit the FreeGames website hosted by github pages: https://gabrieledg0.github.io/FreeGames/
+
 *Overview*
 
 Discover a website with simple but timeless games, to be played alone or with a friend. Fun but also logical experiences await. Enjoy!
