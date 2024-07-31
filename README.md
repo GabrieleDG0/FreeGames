@@ -1,6 +1,6 @@
 # FreeGames 🎮
 
-**Github Pages**
+**Github Page**
 
 Link if you want to visit the FreeGames website hosted by github pages: https://gabrieledg0.github.io/FreeGames/
 
